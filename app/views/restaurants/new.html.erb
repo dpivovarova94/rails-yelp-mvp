@@ -1,0 +1,9 @@
+<h1>Create a new restaurant</h1>
+<!-- app/views/restaurants/_form.html.erb -->
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.submit %>
+<% end %>

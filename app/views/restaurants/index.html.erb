@@ -1,0 +1,11 @@
+<h1>Restaurants</h1>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant.name, restaurant_path(restaurant.id) %><br>
+  <% end %>
+</ul>
+<%= link_to "add a new restaurant", new_restaurant_path %>
+
+
+<%# <input type="checkbox" id="scales" name="scales" checked>
+      <label for="scales">Scales</label> %>
